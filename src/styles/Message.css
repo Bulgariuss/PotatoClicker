@@ -1,0 +1,53 @@
+div.message {
+    position: fixed;
+    bottom: -175px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px;
+    height: 200px;
+    background-color: black;
+    border: 2px solid;
+    border-top-color: rgb(223, 188, 154); 
+    border-left-color: rgb(223, 188, 154);
+    border-right-color: rgb(223, 188, 154) ;
+    border-radius: 60px 60px 0px 0px;
+    transition: 0.3s linear;
+}
+div.message.on {
+    bottom: 0px;
+}
+
+.arrow {
+    font-size: 40px;
+    position: absolute;
+    top: -30px;
+    right: 20px;
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    line-height: 50px;
+    transition: 0.3s linear;
+    cursor: pointer;
+}
+.arrow.on {
+    bottom: 330px;
+    transform: rotate(180deg);
+}
+
+div.message p.text {
+    color: white;
+    padding: 35px 20px
+}
+
+a.cookieLink {
+    color: rgb(158, 83, 62);
+    /* text-decoration: none; */
+}
+/* 
+rgb(223, 188, 154)
+rgb(115, 55, 38); 
+*/

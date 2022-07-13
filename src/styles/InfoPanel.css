@@ -1,0 +1,72 @@
+.infoPanel {
+    width: 52vw;
+    height: 100vh;
+    border-right: 2px  solid black;
+    /* text-align: center; */
+    background: url("../images/midbgc.jpg") no-repeat center;
+    background-size: cover;
+}
+
+div.menu {
+    height: 12vh;
+    border-color: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+div.menu button {
+    font-size: 20px;
+    padding: 4px 28px;
+    border: 2px solid black;
+    color: white;
+    background-color: rgba(0,0,0,0.6);
+    cursor: pointer;
+    box-shadow: 2px 2px 8px black;
+    font-family: 'Merriweather', sans-serif;
+}
+
+div.menu button:hover {
+   box-shadow: 2px 2px 20px black;
+}
+
+button.musicButton {
+    background-color: #222;
+    color: white;
+    cursor: pointer;
+    border: 2px solid;
+    border-top-color: rgb(223, 188, 154);
+    border-left-color: rgb(223, 188, 154);
+    border-right-color: rgb(115, 55, 38);
+    border-bottom-color: rgb(115, 55, 38);
+    text-align: left;
+    font-size: 18px;
+    padding: 4px 8px;
+}
+
+div.content {
+    border: 1px solid black;
+    height: 88vh;
+    background-color: #222;
+    color: white;
+    padding-left: 20px;
+}
+
+.sectionTitle {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+div.content section {
+    margin-top: 30px;
+    position: relative;    
+}
+section h2 {
+    position: absolute;
+    right: 40px;
+    top: 0;
+    cursor: pointer;
+}
+
+

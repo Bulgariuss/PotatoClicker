@@ -3,16 +3,21 @@
     height: 100vh;
     border-right: 2px  solid black;
     text-align: center;
+    position:relative;
+    background: url("../images/leftbgc.jpg") no-repeat center;
+    background-size: cover;
 }
 
 .name {
     margin: 10vh 3vw 0 3vw;
     font-size: 32px;
-    padding: 4px 12px;
+    padding: 4px 28px;
     border: 2px solid black;
-    background-color: transparent;
+    color: white;
+    background-color: rgba(0,0,0,0.6);
     cursor: pointer;
     box-shadow: 2px 2px 8px black;
+    font-family: 'Merriweather', sans-serif;
 }
 
 .name:hover {
@@ -21,17 +26,49 @@
 
 .potatoCount {
     margin-top: 3vh;
-    font-size: 50px;
+    font-size: 40px;
+    color: white;
+    background-color: rgba(0,0,0,0.6);
 }
+
 
 div.clickPanel img {
     margin-top: 10vh;
     width: 55%;
     cursor: pointer;
     transition: .2s;
+    user-select: none;
 }
 
 div.clickPanel img:hover {
     margin-top: calc(10vh - 3%);
     width: 60%;
+}
+div.afk {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 4vh;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    padding-bottom: 4px;
+}
+h1.afkPotatoCount {
+    font-size: 40px;
+    /* background-color: rgba(0,0,0,0.6); */
+}
+
+button.collect {
+    margin: 1vh 3vw 0 3vw;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 4px 12px;
+    border: 2px solid black;
+    background-color: rgba(16, 236, 16, 0.5);
+    cursor: pointer;
+    box-shadow: 2px 2px 8px black;
+    font-family: 'Merriweather', sans-serif;
+}
+button.collect:hover {
+    box-shadow: 2px 2px 15px black;
 }

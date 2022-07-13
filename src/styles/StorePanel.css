@@ -1,0 +1,119 @@
+.storePanel {
+    width: 300px;
+    margin-left: 1px;
+    background: url("../images/midbgc.jpg") no-repeat center;
+    background-size: cover;
+}
+.blur {
+    width: 300px;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+}
+.storePanel h1.store {
+    font-size: 28px;
+    padding: 8px 0;
+    text-align: center;
+    color: white;
+}
+h1.title {
+    height: 18px;
+    font-size: 0px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.upgrades {
+    /* border: 2px solid black; */
+    max-height: 78px;
+    overflow: hidden
+}
+.upgrades:hover {
+    max-height: 300px;
+}
+.upgrades:hover h1.title{
+    font-size: 16px;
+}
+
+.upgrades div.upgrade {
+    height: 60px;
+    width: 60px;
+    border: 2px solid black;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    overflow: hidden;
+    cursor: pointer;
+}
+.upgrades div.upgrade div {
+   position: fixed;
+   top: 66px;
+   right: 310px;
+   pointer-events: none;
+   border: 4px solid black;
+   background-color: rgba(0, 0, 0, 0.3);
+   color: white;
+   text-align: center;
+   width: 150px;
+   font-size: 14px;
+}
+.hidden {
+    display: none;
+}
+.upgrades div img {
+    width: 100%;
+}
+.buildings:hover h1.title {
+    font-size: 16px;
+}
+.buildings .building {
+    height: 64px;
+    border: 2px solid black;
+    border-bottom: 4px solid black;
+    position: relative;
+    cursor: pointer;
+     background-color: rgba(0, 0, 0, 0.2);
+}
+.buildings .building img {
+    width: 60px;
+    user-select: none;
+}
+div.building h1, div.building h2 {
+    display: inline-block;
+    position: absolute;
+    user-select: none;
+}
+h1.buildingName {
+    font-size: 28px;
+    top: 10%;
+    left: 70px;
+    color: white;
+}
+h2.buildingPrice {
+    font-size: 15px;
+    top:60%;
+    left:70px;
+    color: rgb(31, 192, 31);
+}
+.pricePotato {
+    width: 13px !important;
+}
+h1.buildingAmount {
+    top:50%;
+    right:10px;
+    transform: translateY(-50%);
+    color: white;
+    
+}
+
+div.building div {
+    position: fixed;
+   top: 150px;
+   right: 310px;
+   pointer-events: none;
+   border: 4px solid black;
+   background-color: rgba(0, 0, 0, 0.3);
+   color: white;
+   text-align: center;
+   width: 150px;
+   height: 100px;
+   font-size: 20px;
+}
