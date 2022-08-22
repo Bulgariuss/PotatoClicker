@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import bgmusic from '../bgmusic.mp3';
 const useAudio = url => {
   const [audio] = useState(new Audio(url));
-  const [playing, setPlaying] = useState(true);
+  const [playing, setPlaying] = useState(false);
 
   const toggle = () => setPlaying(!playing);
  
