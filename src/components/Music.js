@@ -2,14 +2,14 @@ import React, { useState, useEffect } from "react";
 import bgmusic from '../bgmusic.mp3';
 const useAudio = url => {
   const [audio] = useState(new Audio(url));
-  const [playing, setPlaying] = useState(false);
+  const [playing, setPlaying] = useState(true);
 
   const toggle = () => setPlaying(!playing);
-  toggle()
+
   useEffect(() => {
       playing ? audio.play() : audio.pause();
     },
-    []
+    [playing]
   );
 
   useEffect(() => {
@@ -27,7 +27,7 @@ const Player = () => {
 
   return (
     <div>
-      <button className="musicButton" onClick={toggle}>{playing ? "Mute music" : "Unmute music"}</button>
+      <button className="musicButton" onClick={toggle}>{playing ? "Pause music" : "Play music"}</button>
     </div>
   );
 };
