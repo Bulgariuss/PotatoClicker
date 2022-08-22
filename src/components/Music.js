@@ -5,7 +5,7 @@ const useAudio = url => {
   const [playing, setPlaying] = useState(false);
 
   const toggle = () => setPlaying(!playing);
-
+ 
   useEffect(() => {
       playing ? audio.play() : audio.pause();
     },
