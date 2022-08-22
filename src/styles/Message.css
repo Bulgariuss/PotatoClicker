@@ -1,9 +1,10 @@
 div.message {
     position: fixed;
     bottom: -175px;
+    font-size: 14px;
     left: 50%;
     transform: translateX(-50%);
-    width: 600px;
+    width: 31.3%;
     height: 200px;
     background-color: black;
     border: 2px solid;
