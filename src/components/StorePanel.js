@@ -4,6 +4,7 @@ import upgrades from './UpgradesData.js';
 import potato from '../images/Ziemniak.webp'
 import cursor from '../images/cursor.png'
 
+
 function StorePanel(props) {
     const [up1Hidden, setUp1Hidden] = useState(true)
     const [up2Hidden, setUp2Hidden] = useState(true)

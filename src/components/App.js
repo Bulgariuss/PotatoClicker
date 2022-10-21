@@ -6,6 +6,8 @@ import InfoPanel from './InfoPanel.js'
 import StorePanel from './StorePanel.js'
 import Message from './Message.js'
 
+ 
+
 function App() {
   
   const [potatoCount, setPotatoCount] = useState(10000)
@@ -30,3 +32,4 @@ function App() {
 }
 
 export default App;
+
